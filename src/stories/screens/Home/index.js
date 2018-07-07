@@ -12,7 +12,7 @@ import {
   Right,
   List,
   ListItem , 
-   Header, Content, Card, CardItem, Text, Body
+    Card, CardItem
 } from "native-base";
 
 import styles from "./styles";
@@ -44,7 +44,7 @@ class Home extends React.Component<Props, State> {
         </Header>
         <Content>
           <List>
-            {this.props.list.map((item, i) => (
+            {/* {this.props.list.map((item, i) => (
               <ListItem
                 key={i}
                 onPress={() =>
@@ -54,7 +54,29 @@ class Home extends React.Component<Props, State> {
               >
                 <Text>{item}</Text>
               </ListItem>
-            ))}
+            ))} */}
+<Container>
+        <Header />
+        <Content>
+          <Card>
+            <CardItem  style={{backgroundColor : 'green'}}>
+              <Text style={{marginRight:'20%'}}>00:00:09</Text>
+              <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
+              <Text>2:25 PM </Text>
+            </CardItem>
+            <CardItem style={{backgroundColor : 'yellow'}}>
+              <Body>
+                <Text>
+                NativeBase is made from effective building blocks referred to as components.
+                 
+                </Text>
+              </Body>
+            </CardItem>
+           
+         </Card>
+        </Content>
+      </Container>
+
           </List>
         </Content>
       </Container>
