@@ -55,16 +55,64 @@ class Home extends React.Component<Props, State> {
                 <Text>{item}</Text>
               </ListItem>
             ))} */}
-<Container>
-        <Header />
+<Container >
+        {/* <Header /> */}
         <Content>
           <Card>
-            <CardItem  style={{backgroundColor : 'green'}}>
+            <CardItem  >
               <Text style={{marginRight:'20%'}}>00:00:09</Text>
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
             </CardItem>
-            <CardItem style={{backgroundColor : 'yellow'}}>
+            <CardItem style={{backgroundColor : 'gray'}}>
+              <Body>
+                <Text>
+                NativeBase is made from effective building blocks referred to as components.
+                 
+                </Text>
+              </Body>
+            </CardItem>
+           
+         </Card>
+         <Card>
+            <CardItem  >
+              <Text style={{marginRight:'20%'}}>00:00:09</Text>
+              <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
+              <Text>2:25 PM </Text>
+            </CardItem>
+            <CardItem style={{backgroundColor : 'gray'}}>
+              <Body>
+                <Text>
+                NativeBase is made from effective building blocks referred to as components.
+                 
+                </Text>
+              </Body>
+            </CardItem>
+           
+         </Card>
+         <Card>
+            <CardItem  >
+              <Text style={{marginRight:'20%'}}>00:00:09</Text>
+              <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
+              <Text>2:25 PM </Text>
+            </CardItem>
+            <CardItem style={{backgroundColor : 'gray'}}>
+              <Body>
+                <Text>
+                NativeBase is made from effective building blocks referred to as components.
+                 
+                </Text>
+              </Body>
+            </CardItem>
+           
+         </Card>
+         <Card>
+            <CardItem  >
+              <Text style={{marginRight:'20%'}}>00:00:09</Text>
+              <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
+              <Text>2:25 PM </Text>
+            </CardItem>
+            <CardItem style={{backgroundColor : 'gray'}}>
               <Body>
                 <Text>
                 NativeBase is made from effective building blocks referred to as components.
