@@ -31,6 +31,7 @@ class Home extends React.Component<Props, State> {
               <Icon
                 active
                 name="menu"
+                style={{  color : 'black'}}
                 onPress={() => this.props.navigation.navigate("DrawerOpen")}
               />
             </Button>

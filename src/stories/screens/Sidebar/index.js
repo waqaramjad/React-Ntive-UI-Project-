@@ -5,11 +5,15 @@ import { NavigationActions } from "react-navigation";
 const routes = [
 	{
 		route: "Home",
-		caption: "Home",
+		caption: "Always Listening",
 	},
 	{
 		route: "BlankPage",
-		caption: "Blank Page",
+		caption: "About Butterfly",
+	},
+	{
+		route: "Login",
+		caption: "Trash",
 	},
 	{
 		route: "Login",
