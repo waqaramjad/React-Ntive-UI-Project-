@@ -30,7 +30,7 @@ class LoginForm extends React.Component<Props, State> {
   renderInput({ input, label, type, meta: { touched, error, warning } }) {
     return (
       <Item error={error && touched}>
-        <Icon active name={input.name === "email" ? "person" : "unlock"} />
+        {/* <Icon active name={input.name === "email" ? "person" : "unlock"} /> */}
         <Input
           ref={c => (this.textInput = c)}
           placeholder={input.name === "email" ? "Email" : "Password"}
@@ -56,17 +56,18 @@ class LoginForm extends React.Component<Props, State> {
 
   render() {
     const form = (
-      <Form>
+      <Form  style={{ width:250 , marginTop: 10 , backgroundColor : 'white' }}>
         <Field
           name="email"
           component={this.renderInput}
           validate={[email, required]}
+          
         />
-        <Field
+        {/* <Field
           name="password"
           component={this.renderInput}
           validate={[alphaNumeric, minLength8, maxLength15, required]}
-        />
+        /> */}
       </Form>
     );
     return (
