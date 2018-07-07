@@ -24,7 +24,8 @@ class Home extends React.Component<Props, State> {
   render() {
     return (
       <Container style={styles.container}>
-        <Header>
+      {/* // <Container style={}> */}
+        <Header style={{ backgroundColor:'white'}}>
           <Left>
             <Button transparent>
               <Icon
@@ -34,8 +35,8 @@ class Home extends React.Component<Props, State> {
               />
             </Button>
           </Left>
-          <Body>
-            <Title>Home</Title>
+          <Body >
+            <Title>My Home</Title>
           </Body>
           <Right />
         </Header>
