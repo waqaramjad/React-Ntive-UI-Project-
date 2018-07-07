@@ -36,8 +36,6 @@ export default class Setup extends React.Component<Props, State> {
 	}
 
 	render() {
-		var a = 'waqar'
-		console.log(a)
 		if (!this.state.isReady || this.state.isLoading) {
 			return <Expo.AppLoading />;
 		}

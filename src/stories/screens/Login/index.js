@@ -11,46 +11,26 @@ class Login extends React.Component<Props, State> {
 	render() {
 		return (
 			<Container>
-				<Image source={require('../../../../assets/bg.png')} style={
-{
-	flex: 1,
-	width: null,
-    height: null,
-    // resizeMode: 'cover', // or 'stretch'
-  }
-				} ></Image>
-
-
-				
-				{/* <Header style={{ height: 200 }}> */}
-					{/* <Body style={{ alignItems: "center" }}> */}
-						{/* <Icon name="flash" style={{ fontSize: 104 }} /> */}
-						{/* <Title>ReactNativeSeed.com</Title> */}
-						{/* <View padder>
+				{/* <Header style={{ height: 200 }}>
+					<Body style={{ alignItems: "center" }}>
+						<Icon name="flash" style={{ fontSize: 104 }} />
+						<Title>ReactNativeSeed.com</Title>
+						<View padder>
 							<Text style={{ color: Platform.OS === "ios" ? "#000" : "#FFF" }}>
 								Build Something Amazing
 							</Text>
-						</View> */}
-					{/* </Body> */}
-				{/* </Header> */}
-				{/* <Content> */}
-				<View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'
-			,borderRadius: 4,
-			borderWidth: 0.5,
-			borderColor: 'green',
-			}}>	
-			{/* <Text>Hello Brother skdif hsiudfi sdiubfousdbf osbufsd fu sduf sdiufvsudf sf</Text>				 */}
-				{this.props.loginForm}
-					<View >
-						<Button block onPress={() => this.props.onLogin()}
-						 style={{ width:500 , marginTop: 10 }}
-						> 
+						</View>
+					</Body>
+				</Header> */}
+				<Content>
+					{this.props.loginForm}
+					<View padder>
+						<Button block onPress={() => this.props.onLogin()}>
 							<Text>Login</Text>
 						</Button>
 					</View>
-					</View>
-				{/* </Content> */}
-				{/* <Footer style={{ backgroundColor: "#F8F8F8" }}>
+				</Content>
+				<Footer style={{ backgroundColor: "#F8F8F8" }}>
 					<View style={{ alignItems: "center", opacity: 0.5, flexDirection: "row" }}>
 						<View padder>
 							<Text style={{ color: "#000" }}>Made with love at </Text>
@@ -60,7 +40,7 @@ class Login extends React.Component<Props, State> {
 							style={{ width: 422 / 4, height: 86 / 4 }}
 						/>
 					</View>
-				</Footer> */}
+				</Footer>
 			</Container>
 		);
 	}
