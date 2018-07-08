@@ -1,6 +1,7 @@
 import * as React from "react";
 import { Text, Container, List, ListItem, Content } from "native-base";
 import { NavigationActions } from "react-navigation";
+import Right from "../../../theme/components/Right";
 
 const routes = [
 	{
@@ -34,6 +35,10 @@ export default class Sidebar extends React.Component<Props, State> {
 		return (
 			<Container>
 				<Content>
+					<Text style={{marginTop:'10%' , marginLeft:2, marginBottom:'-20%'}}>Waqar
+					<Text>ali</Text>
+					
+					</Text>
 					<List
 						style={{ marginTop: 40 }}
 						dataArray={routes}
@@ -45,7 +50,8 @@ export default class Sidebar extends React.Component<Props, State> {
 										data.route === "Login"
 											? this.props.navigation.dispatch(resetAction)
 											: this.props.navigation.navigate(data.route);
-									}}
+									
+										}}
 								>
 									<Text>{data.caption}</Text>
 								</ListItem>

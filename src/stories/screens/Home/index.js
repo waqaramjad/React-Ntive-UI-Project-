@@ -24,6 +24,13 @@ export interface Props {
 export interface State {}
 class Home extends React.Component<Props, State> {
   render() {
+
+    var swipeoutBtns = [
+      {
+        text: 'Delete', 
+        backgroundColor: 'red'
+      }
+    ]
     return (
       <Container style={styles.container}>
       {/* // <Container style={}> */}
@@ -59,12 +66,14 @@ class Home extends React.Component<Props, State> {
 <Container >
         {/* <Header /> */}
         <Content>
+
           <Card>
             <CardItem  >
               <Text style={{marginRight:'20%'}}>00:00:09</Text>
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
             </CardItem>
+        <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : 'gray'}}>
               <Body>
                 <Text>
@@ -73,6 +82,7 @@ class Home extends React.Component<Props, State> {
                 </Text>
               </Body>
             </CardItem>
+         </Swipeout>
            
          </Card>
          <Card>
@@ -81,6 +91,7 @@ class Home extends React.Component<Props, State> {
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
             </CardItem>
+            <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : 'gray'}}>
               <Body>
                 <Text>
@@ -89,6 +100,7 @@ class Home extends React.Component<Props, State> {
                 </Text>
               </Body>
             </CardItem>
+         </Swipeout>
            
          </Card>
          <Card>
@@ -97,6 +109,7 @@ class Home extends React.Component<Props, State> {
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
             </CardItem>
+            <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : 'gray'}}>
               <Body>
                 <Text>
@@ -105,6 +118,7 @@ class Home extends React.Component<Props, State> {
                 </Text>
               </Body>
             </CardItem>
+         </Swipeout>
            
          </Card>
          <Card>
@@ -113,6 +127,7 @@ class Home extends React.Component<Props, State> {
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
             </CardItem>
+            <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : 'gray'}}>
               <Body>
                 <Text>
@@ -121,6 +136,7 @@ class Home extends React.Component<Props, State> {
                 </Text>
               </Body>
             </CardItem>
+         </Swipeout>
            
          </Card>
         </Content>
