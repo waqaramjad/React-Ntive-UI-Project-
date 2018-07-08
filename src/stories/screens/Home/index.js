@@ -24,7 +24,23 @@ export interface Props {
 export interface State {}
 class Home extends React.Component<Props, State> {
   render() {
-console.log(this.props.navigation)
+
+    var data1 = 'NativeBase is made from effective building blocks referred to as components.'
+    var data2 = 'NativeBase is made from effective building blocks referred to .'
+    var data3 = 'NativeBase is made from effective building blocks '
+   
+    var sec1 = ''
+    var sec2 = ''
+    var sec3 = ''
+
+    var date1 = ''
+    var date2 = ''
+    var date3 = ''
+
+    var time1 = ''
+    var time2 = ''
+    var time3 = ''
+    console.log(this.props.navigation)
     var swipeoutBtns = [
       {
         text: 'Delete', 

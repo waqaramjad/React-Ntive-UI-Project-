@@ -66,9 +66,9 @@ export default class Sidebar extends React.Component<Props, State> {
 							
 								<ListItem icon>
             <Left>
-              <Button >
+              {/* <Button > */}
                 <Icon active name="ios-information-circle-outline" />
-              </Button>
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>About Butterfly</Text>
@@ -76,11 +76,15 @@ export default class Sidebar extends React.Component<Props, State> {
             
           </ListItem>
 
-		  <ListItem icon>
+		  <ListItem icon button >
             <Left>
-              <Button >
-                <Icon active name="trash" />
-              </Button>
+              {/* <Button > */}
+								<Icon active name="trash"
+								 style={{  color : 'black',
+								
+								}}
+								/>
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>Trash</Text>
@@ -89,9 +93,9 @@ export default class Sidebar extends React.Component<Props, State> {
           </ListItem>
 		  <ListItem icon>
             <Left>
-              <Button >
-                <Icon active name="sign-out" />
-              </Button>
+              {/* <Button > */}
+                <Icon active name="sign-in" />
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>Sign Out</Text>
