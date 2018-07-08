@@ -38,15 +38,19 @@ console.log(this.props.navigation)
           <Left>
             <Button transparent>
               <Icon
-                active
-                name="menu"
-                style={{  color : 'black'}}
+                active name="menu"
+                style={{  color:'black'}}
                 onPress={() => this.props.navigation.navigate("DrawerOpen")}
               />
             </Button>
           </Left>
           <Body >
-            <Title>My Home</Title>
+          <Icon
+                active
+                name="trash"
+                style={{  color : 'black'}}
+                onPress={() => this.props.navigation.navigate("SpeechRoute")}
+              />
           </Body>
           <Right />
         </Header>
