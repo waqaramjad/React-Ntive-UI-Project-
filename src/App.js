@@ -6,7 +6,7 @@ import Login from "./container/LoginContainer";
 import Home from "./container/HomeContainer";
 import BlankPage from "./container/BlankPageContainer";
 import Sidebar from "./container/SidebarContainer";
-
+import SpeechRoute from "./container/SpeechToTextContainer/index";
 const Drawer = DrawerNavigator(
 	{
 		Home: { screen: Home },
@@ -22,6 +22,7 @@ const App = StackNavigator(
 		Login: { screen: Login },
 		BlankPage: { screen: BlankPage },
 		Drawer: { screen: Drawer },
+		SpeechRoute:{screen: SpeechRoute}
 	},
 	{
 		initialRouteName: "Login",

@@ -18,7 +18,7 @@ const routes = [
 		caption: "Trash",
 	},
 	{
-		route: "Login",
+		route: "SpeechRoute",
 		caption: "Logout",
 	},
 ];
@@ -62,9 +62,9 @@ export default class Sidebar extends React.Component<Props, State> {
 							
 								<ListItem icon>
             <Left>
-              <Button >
+              {/* <Button > */}
                 <Icon active name="ios-information-circle-outline" />
-              </Button>
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>About Butterfly</Text>
@@ -74,9 +74,9 @@ export default class Sidebar extends React.Component<Props, State> {
 
 		  <ListItem icon>
             <Left>
-              <Button >
+              {/* <Button > */}
                 <Icon active name="trash" />
-              </Button>
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>Trash</Text>
@@ -85,9 +85,9 @@ export default class Sidebar extends React.Component<Props, State> {
           </ListItem>
 		  <ListItem icon>
             <Left>
-              <Button >
+              {/* <Button > */}
                 <Icon active name="sign-out" />
-              </Button>
+              {/* </Button> */}
             </Left>
             <Body>
               <Text>Sign Out</Text>
