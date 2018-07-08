@@ -24,7 +24,7 @@ export interface Props {
 export interface State {}
 class Home extends React.Component<Props, State> {
   render() {
-
+console.log(this.props.navigation)
     var swipeoutBtns = [
       {
         text: 'Delete', 
@@ -66,9 +66,18 @@ class Home extends React.Component<Props, State> {
 <Container >
         {/* <Header /> */}
         <Content>
-
-          <Card>
-            <CardItem  >
+            {/* <Button style={{backgroundColor:'transparent' , height:'30%'}} */}
+           
+            
+          <Card  >
+          {/* <Card   onPress={() => {alert('You tapped the button!');
+          console.log('hy')
+ }}>  */}
+            <CardItem  button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+                    name:  'React Native Starter kit' 
+                  })} >
+            {/* <CardItem  > */}
+           
               <Text style={{marginRight:'20%'}}>00:00:09</Text>
               <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
               <Text>2:25 PM </Text>
@@ -85,6 +94,8 @@ class Home extends React.Component<Props, State> {
          </Swipeout>
            
          </Card>
+         {/* </Button> */}
+
          <Card>
             <CardItem  >
               <Text style={{marginRight:'20%'}}>00:00:09</Text>
