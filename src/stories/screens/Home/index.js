@@ -1,4 +1,5 @@
 import * as React from "react";
+import Swipeout from 'react-native-swipeout';
 import {
   Container,
   Header,
