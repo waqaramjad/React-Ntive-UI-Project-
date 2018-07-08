@@ -8,7 +8,10 @@ export interface Props {
 export interface State {}
 class BlankPage extends React.Component<Props, State> {
 	render() {
+
 		const param = this.props.navigation.state.params;
+		console.log(param)
+
 		return (
 			<Container style={styles.container}>
 				<Header>
@@ -20,13 +23,14 @@ class BlankPage extends React.Component<Props, State> {
 
 					<Body style={{ flex: 3 }}>
 						<Title>{param ? param.name.item : "Blank Page"}</Title>
+						<Title>Blank Page</Title>
 					</Body>
 
 					<Right />
 				</Header>
 
 				<Content padder>
-					<Text>{param !== undefined ? param.name.item : "Create Something Awesome . . ."}</Text>
+					{/* <Text>{param !== undefined ? param.name.item : "Create Something Awesome . . ."}</Text> */}
 				</Content>
 			</Container>
 		);

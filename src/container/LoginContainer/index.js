@@ -29,12 +29,12 @@ class LoginForm extends React.Component<Props, State> {
 
   renderInput({ input, label, type, meta: { touched, error, warning } }) {
     return (
-      <Item error={error && touched}> 
-        <Icon active name={input.name === "email" ? "person" : "unlock"} />
+      <Item error={error && touched}>
+        {/* <Icon active name={input.name === "email" ? "person" : "unlock"} /> */}
         <Input
           ref={c => (this.textInput = c)}
           placeholder={input.name === "email" ? "Email" : "Password"}
-          // secureTextEntry={input.name === "password" ? true : false}
+          secureTextEntry={input.name === "password" ? true : false}
           {...input}
         />
       </Item>
@@ -42,28 +42,26 @@ class LoginForm extends React.Component<Props, State> {
   }
 
   login() {
-    if (this.props.valid) {
+    // if (this.props.valid) {
       this.props.navigation.navigate("Drawer");
-    } else {
-      Toast.show({
-        text: "Enter Valid Username & password!",
-        duration: 2000,
-        position: "top",
-        textStyle: { textAlign: "center" }
-      });
-    }
+    // } else {
+    //   Toast.show({
+    //     text: "Enter Valid Username & password!",
+    //     duration: 2000,
+    //     position: "top",
+    //     textStyle: { textAlign: "center" }
+    //   });
+    // }
   }
 
   render() {
     const form = (
-      <Form
-      style={{ width:200 , marginTop: 10 , backgroundColor:'white' }}
-
-      >
+      <Form  style={{ width:250 , marginTop: 10 , backgroundColor : 'white' }}>
         <Field
           name="email"
           component={this.renderInput}
           validate={[email, required]}
+          
         />
         {/* <Field
           name="password"

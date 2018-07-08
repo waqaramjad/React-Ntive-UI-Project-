@@ -1,15 +1,21 @@
 import * as React from "react";
-import { Text, Container, List, ListItem, Content } from "native-base";
+import { Text, Container, List, ListItem, Content ,Icon,Button , View,  Switch ,Right,  Left ,  Body} from "native-base";
 import { NavigationActions } from "react-navigation";
+// import Right from "../../../theme/components/Right";
+// import { Switch } from "react-native-switch";
 
 const routes = [
 	{
 		route: "Home",
-		caption: "Home",
+		caption: "Always Listening",
 	},
 	{
 		route: "BlankPage",
-		caption: "Blank Page",
+		caption: "About Butterfly",
+	},
+	{
+		route: "Login",
+		caption: "Trash",
 	},
 	{
 		route: "Login",
@@ -30,24 +36,71 @@ export default class Sidebar extends React.Component<Props, State> {
 		return (
 			<Container>
 				<Content>
+					{/* <Text style={{marginTop:'10%' , marginLeft:2, marginBottom:'-20%'}}>Always Listning */}
+					
+					
+					{/* </Text> */}
+
+					{/* <Switch value={true} style={{marginTop:'10%'}}/> */}
 					<List
-						style={{ marginTop: 40 }}
-						dataArray={routes}
-						renderRow={data => {
-							return (
-								<ListItem
-									button
-									onPress={() => {
-										data.route === "Login"
-											? this.props.navigation.dispatch(resetAction)
-											: this.props.navigation.navigate(data.route);
-									}}
-								>
-									<Text>{data.caption}</Text>
-								</ListItem>
-							);
-						}}
-					/>
+						style={{ marginTop: 40 }}>
+											
+											
+											<ListItem icon>
+												<Left/>
+												<Body>
+
+			<Text>Always Listning</Text>
+
+												</Body>
+
+											 <Right>
+											<Switch value={true}/>
+
+												</Right>	 
+												</ListItem>	
+							
+								<ListItem icon>
+            <Left>
+              <Button >
+                <Icon active name="ios-information-circle-outline" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>About Butterfly</Text>
+            </Body>
+            
+          </ListItem>
+
+		  <ListItem icon>
+            <Left>
+              <Button >
+                <Icon active name="trash" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Trash</Text>
+            </Body>
+           
+          </ListItem>
+		  <ListItem icon>
+            <Left>
+              <Button >
+                <Icon active name="sign-out" />
+              </Button>
+            </Left>
+            <Body>
+              <Text>Sign Out</Text>
+            </Body>
+           
+          </ListItem>
+
+
+
+
+
+						
+					</List>
 				</Content>
 			</Container>
 		);

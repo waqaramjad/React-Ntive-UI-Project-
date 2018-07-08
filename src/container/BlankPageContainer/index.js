@@ -7,6 +7,7 @@ export interface Props {
 export interface State {}
 export default class BlankPageContainer extends React.Component<Props, State> {
 	render() {
+		console.log(this.props.navigation)
 		return <BlankPage navigation={this.props.navigation} />;
 	}
 }

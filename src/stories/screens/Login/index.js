@@ -20,31 +20,31 @@ class Login extends React.Component<Props, State> {
   }
 				} ></Image>
 
-
-				
-				{/* <Header style={{ height: 200 }}> */}
-					{/* <Body style={{ alignItems: "center" }}> */}
-						{/* <Icon name="flash" style={{ fontSize: 104 }} /> */}
-						{/* <Title>ReactNativeSeed.com</Title> */}
-						{/* <View padder>
+				<Image   source={require('../../../../assets/logo.png')}
+				style={{position: 'absolute' , height : 250 , width : 250 }}
+				></Image>
+				{/* <Header style={{ height: 200 }}>
+					<Body style={{ alignItems: "center" }}>
+						<Icon name="flash" style={{ fontSize: 104 }} />
+						<Title>ReactNativeSeed.com</Title>
+						<View padder>
 							<Text style={{ color: Platform.OS === "ios" ? "#000" : "#FFF" }}>
 								Build Something Amazing
 							</Text>
-						</View> */}
-					{/* </Body> */}
-				{/* </Header> */}
+						</View>
+					</Body>
+				</Header> */}
 				{/* <Content> */}
 				<View style={{position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, justifyContent: 'center', alignItems: 'center'
 			,borderRadius: 4,
 			borderWidth: 0.5,
 			borderColor: 'green',
 			}}>	
-			{/* <Text>Hello Brother skdif hsiudfi sdiubfousdbf osbufsd fu sduf sdiufvsudf sf</Text>				 */}
-				{this.props.loginForm}
-					<View >
+					{this.props.loginForm}
+					<View padder>
 						<Button block onPress={() => this.props.onLogin()}
 						 style={{ width:500 , marginTop: 10 }}
-						> 
+						>
 							<Text>Login</Text>
 						</Button>
 					</View>
