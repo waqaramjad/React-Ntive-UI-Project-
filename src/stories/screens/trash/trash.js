@@ -104,6 +104,7 @@ class Trash extends React.Component<Props, State> {
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date1}</Text>
               <Text>{time1} </Text>
+              <Icon active name="dots-horizontal" />
               
             </CardItem>
         <Swipeout right={swipeoutBtns} >
@@ -124,6 +125,8 @@ class Trash extends React.Component<Props, State> {
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date2}</Text>
               <Text>{time2} </Text>
+              <Icon active name="md-arrow-dropright" />
+
             </CardItem>
             <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : '#E9EBEE'}}>
@@ -141,6 +144,8 @@ class Trash extends React.Component<Props, State> {
               <Text style={{marginRight:'20%'}}>{sec3}</Text>
               <Text  style={{marginRight:'15%' }}>{date3}</Text>
               <Text>{time3}</Text>
+              <Icon active name="md-arrow-dropright" />
+
             </CardItem>
             <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : '#E9EBEE'}}>

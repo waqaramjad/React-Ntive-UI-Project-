@@ -1,5 +1,7 @@
 import * as React from "react";
 import { Text, Container, List, ListItem, Content ,Icon,Button , View,  Switch ,Right,  Left ,  Body} from "native-base";
+import {  Image } from 'react-native';
+
 import { NavigationActions } from "react-navigation";
 // import Right from "../../../theme/components/Right";
 // import { Switch } from "react-native-switch";
@@ -72,7 +74,7 @@ export default class Sidebar extends React.Component<Props, State> {
             
           </ListItem>
 
-		  <ListItem icon button onPress={() => this.props.navigation.navigate("Trashroute" )} >
+		  <ListItem noBorder icon  button onPress={() => this.props.navigation.navigate("Trashroute" )}  >
             <Left>
               {/* <Button > */}
                 <Icon active name="trash" />
@@ -83,10 +85,11 @@ export default class Sidebar extends React.Component<Props, State> {
             </Body>
            
           </ListItem>
-		  <ListItem icon style={{marginTop : '100%'}}>
+		  <ListItem  style={{marginTop : '100%'}}>
             <Left>
               {/* <Button > */}
-                <Icon active name="sign-out" />
+							<Image  source={require('../../../../assets/signout.png')} style={{width: 30, height: 30  }} />
+
               {/* </Button> */}
             </Left>
             <Body>
