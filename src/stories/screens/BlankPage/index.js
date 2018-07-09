@@ -83,7 +83,6 @@ class BlankPage extends React.Component<Props, State> {
 	   </CardItem>
            
          </Card>
-					{/* <Text>{param !== undefined ? param.name.item : "Create Something Awesome . . ."}</Text> */}
 				</Content>
 			</Container>
 		);

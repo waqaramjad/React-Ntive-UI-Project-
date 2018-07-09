@@ -22,7 +22,6 @@ class Speech extends React.Component<Props, State> {
  margin: '10%', 
 	width: 300,
     height: 500,
-    // resizeMode: 'cover', // or 'stretch'
   }			} />
        
         </TouchableOpacity > 

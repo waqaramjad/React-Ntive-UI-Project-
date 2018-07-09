@@ -17,8 +17,6 @@ import {
   ListItem , 
     Card, CardItem
 } from "native-base";
-// import React, { Component } from 'react';
-// import styles from "./styles";
 export interface Props {
 	navigation: any;
 }
@@ -58,28 +56,12 @@ class Trash extends React.Component<Props, State> {
           ]
         return (
 <Container >
-        {/* <Header /> */}
-        {/* <Header>
-					<Left>
-						<Button transparent onPress={() => this.props.navigation.goBack()}>
-							<Icon name="ios-arrow-back" />
-						</Button>
-					</Left> */}
-
-					{/* <Body style={{ flex: 3 }}>
-					
-						<Title style={{marginLeft:'50%'}}>Trash </Title>
-					</Body>
-
-					<Right />
-        </Header> */}
+ 
         	<Header style={{ backgroundColor:'white'}}>
 					
 				
           <Left>
-          {/* <Button transparent onPress={() => this.props.navigation.goBack()}> */}
             <Icon style={{ backgroundcolor:'gray' , marginTop:'10%'}} name="ios-arrow-back" />
-          {/* </Button> */}
         </Left>
          <Body >
          <TouchableOpacity  
@@ -91,15 +73,11 @@ class Trash extends React.Component<Props, State> {
          <Right />
        </Header>
         <Content>
-            {/* <Button style={{backgroundColor:'transparent' , height:'30%'}} */}
            
             
           <Card  >
-          {/* <Card   onPress={() => {alert('You tapped the button!');
-          console.log('hy')
- }}>  */}
+         
             <CardItem   >
-            {/* <CardItem  > */}
            
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date1}</Text>

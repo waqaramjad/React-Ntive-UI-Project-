@@ -73,12 +73,7 @@ class Home extends React.Component<Props, State> {
           onPress={ ()=>{this.props.navigation.navigate("SpeechRoute")}}>
           <Image  source={require('../../../../assets/top.png')} style={{width: 50, height: 50 , marginLeft:'50%', marginTop: '10%' }} />
          </ TouchableOpacity>
-          {/* <Icon
-                active
-                name="trash"
-                style={{  color : 'black'}}
-                onPress={() => this.props.navigation.navigate("SpeechRoute")}
-              /> */}
+         
           </Body>
           <Right >
           <Icon
@@ -91,27 +86,13 @@ class Home extends React.Component<Props, State> {
         </Header>
         <Content>
           <List>
-            {/* {this.props.list.map((item, i) => (
-              <ListItem
-                key={i}
-                onPress={() =>
-                  this.props.navigation.navigate("BlankPage", {
-                    name: { item }
-                  })}
-              >
-                <Text>{item}</Text>
-              </ListItem>
-            ))} */}
+            
 <Container >
-        {/* <Header /> */}
+       
         <Content>
-            {/* <Button style={{backgroundColor:'transparent' , height:'30%'}} */}
            
             
           <Card  >
-          {/* <Card   onPress={() => {alert('You tapped the button!');
-          console.log('hy')
- }}>  */}
             <CardItem  button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
                    name : 'NativeBase', 
                    seconds:  sec1 , 
@@ -119,7 +100,6 @@ class Home extends React.Component<Props, State> {
                     time : time1 ,
                     data : data1 
                   })} >
-            {/* <CardItem  > */}
            
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date1}</Text>
@@ -143,7 +123,6 @@ class Home extends React.Component<Props, State> {
          </Swipeout>
            
          </Card>
-         {/* </Button> */}
 
          <Card >
             <CardItem button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{

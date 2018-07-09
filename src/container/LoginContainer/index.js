@@ -42,16 +42,16 @@ class LoginForm extends React.Component<Props, State> {
   }
 
   login() {
-    // if (this.props.valid) {
+    if (this.props.valid) {
       this.props.navigation.navigate("Drawer");
-    // } else {
-    //   Toast.show({
-    //     text: "Enter Valid Username & password!",
-    //     duration: 2000,
-    //     position: "top",
-    //     textStyle: { textAlign: "center" }
-    //   });
-    // }
+    } else {
+      Toast.show({
+        text: "Enter Valid Username & password!",
+        duration: 2000,
+        position: "top",
+        textStyle: { textAlign: "center" }
+      });
+    }
   }
 
   render() {
@@ -66,18 +66,11 @@ class LoginForm extends React.Component<Props, State> {
 
           style={{borderWidth: 2,
  
-            // Set border Hex Color Code Here.
-           
-            
-           // Set border Radius.
+         
             borderRadius: 20 ,}}
           
         />
-        {/* <Field
-          name="password"
-          component={this.renderInput}
-          validate={[alphaNumeric, minLength8, maxLength15, required]}
-        /> */}
+        
       </Form>
     );
     return (

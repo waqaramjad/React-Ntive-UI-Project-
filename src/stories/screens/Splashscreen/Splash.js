@@ -46,7 +46,6 @@ class Splash extends React.Component<Props, State> {
 	flex: 1,
 	width: null,
     height: null,
-    // resizeMode: 'cover', // or 'stretch'
   }
 				} ></Image>
         

@@ -38,12 +38,9 @@ export default class Sidebar extends React.Component<Props, State> {
 		return (
 			<Container>
 				<Content>
-					{/* <Text style={{marginTop:'10%' , marginLeft:2, marginBottom:'-20%'}}>Always Listning */}
 					
 					
-					{/* </Text> */}
 
-					{/* <Switch value={true} style={{marginTop:'10%'}}/> */}
 					<List
 						style={{ marginTop: 40 }}>
 											
@@ -76,9 +73,7 @@ export default class Sidebar extends React.Component<Props, State> {
 
 		  <ListItem noBorder icon  button onPress={() => this.props.navigation.navigate("Trashroute" )}  >
             <Left>
-              {/* <Button > */}
                 <Icon active name="trash" />
-              {/* </Button> */}
             </Left>
             <Body>
               <Text>Trash</Text>
@@ -87,10 +82,8 @@ export default class Sidebar extends React.Component<Props, State> {
           </ListItem>
 		  <ListItem  style={{marginTop : '100%'}}>
             <Left>
-              {/* <Button > */}
 							<Image  source={require('../../../../assets/signout.png')} style={{width: 30, height: 30  }} />
 
-              {/* </Button> */}
             </Left>
             <Body>
               <Text>Sign Out</Text>
