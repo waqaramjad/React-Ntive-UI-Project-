@@ -115,6 +115,7 @@ class Home extends React.Component<Props, State> {
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date1}</Text>
               <Text>{time1} </Text>
+              
             </CardItem>
         <Swipeout right={swipeoutBtns} >
             <CardItem style={{backgroundColor : '#E9EBEE'}}>
