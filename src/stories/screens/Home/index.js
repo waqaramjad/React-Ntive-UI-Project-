@@ -105,7 +105,7 @@ class Home extends React.Component<Props, State> {
  }}>  */}
             <CardItem  button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
                    name : 'NativeBase', 
-                   secomds:  sec1 , 
+                   seconds:  sec1 , 
                     date :  date1, 
                     time : time1 ,
                     data : data1 
@@ -116,9 +116,15 @@ class Home extends React.Component<Props, State> {
               <Text  style={{marginRight:'15%' }}>{date1}</Text>
               <Text>{time1} </Text>
               
-            </CardItem>
+            </CardItem  >
         <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : '#E9EBEE'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}} button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+                   name : 'NativeBase', 
+                   seconds:  sec1 , 
+                    date :  date1, 
+                    time : time1 ,
+                    data : data1 
+                  })}>
               <Body>
                 <Text>
                 {data1} 
@@ -130,14 +136,28 @@ class Home extends React.Component<Props, State> {
          </Card>
          {/* </Button> */}
 
-         <Card>
-            <CardItem  >
+         <Card >
+            <CardItem button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+                   name : 'NativeBase', 
+                   seconds:  sec2 , 
+                    date :  date2, 
+                    time : time2 ,
+                    data : data2 
+                  })} >
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date2}</Text>
               <Text>{time2} </Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : '#E9EBEE'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}
+            button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+              name : 'NativeBase', 
+              seconds:  sec2 , 
+               date :  date2, 
+               time : time2 ,
+               data : data2 
+             })}
+            >
               <Body>
                 <Text>
                  {data2}
@@ -148,13 +168,27 @@ class Home extends React.Component<Props, State> {
            
          </Card>
          <Card>
-            <CardItem  >
+            <CardItem button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+                   name : 'NativeBase', 
+                   seconds:  sec3 , 
+                    date :  date3, 
+                    time : time3 ,
+                    data : data3 
+                  })} >
               <Text style={{marginRight:'20%'}}>{sec3}</Text>
               <Text  style={{marginRight:'15%' }}>{date3}</Text>
               <Text>{time3}</Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : '#E9EBEE'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}
+            button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+              name : 'NativeBase', 
+              seconds:  sec3 , 
+               date :  date3, 
+               time : time3 ,
+               data : data3 
+             })}
+            >
               <Body>
                 <Text>
 {data3}                 
@@ -165,13 +199,27 @@ class Home extends React.Component<Props, State> {
            
          </Card>
          <Card>
-            <CardItem  >
+            <CardItem button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+                   name : 'NativeBase', 
+                   seconds:  sec4 , 
+                    date :  date4, 
+                    time : time4 ,
+                    data : data4 
+                  })} >
               <Text style={{marginRight:'20%'}}>{sec4}</Text>
               <Text  style={{marginRight:'15%' }}>{date4}</Text>
               <Text>{time4} </Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : '#E9EBEE'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}
+            button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
+              name : 'NativeBase', 
+              seconds:  sec4 , 
+               date :  date4, 
+               time : time4 ,
+               data : data4 
+             })}
+            >
               <Body>
                 <Text>
 {data4}                 

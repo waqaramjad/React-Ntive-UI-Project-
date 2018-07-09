@@ -8,6 +8,7 @@ import BlankPage from "./container/BlankPageContainer";
 import Sidebar from "./container/SidebarContainer";
 import SpeechRoute from "./container/SpeechToTextContainer/index";
 import Trashroute from "./container/trashCont/index"
+import Splashroute from "./container/SplashCont/index"
 const Drawer = DrawerNavigator(
 	{
 		Home: { screen: Home },
@@ -24,10 +25,12 @@ const App = StackNavigator(
 		BlankPage: { screen: BlankPage },
 		Drawer: { screen: Drawer },
 		SpeechRoute:{screen: SpeechRoute},
-		Trashroute:{screen: Trashroute}
+		Trashroute:{screen: Trashroute} , 
+		Splashroute :{screen:Splashroute}
+
 	},
 	{
-		initialRouteName: "Login",
+		initialRouteName: "Splashroute",
 		headerMode: "none",
 	}
 );
