@@ -34,8 +34,10 @@ const App = StackNavigator(
 		headerMode: "none",
 	}
 );
+console.disableYellowBox = true;
 
 export default () => (
+	
 	<Root>
 		<App />
 	</Root>

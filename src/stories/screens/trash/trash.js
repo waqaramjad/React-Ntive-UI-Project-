@@ -59,20 +59,37 @@ class Trash extends React.Component<Props, State> {
         return (
 <Container >
         {/* <Header /> */}
-        <Header>
+        {/* <Header>
 					<Left>
 						<Button transparent onPress={() => this.props.navigation.goBack()}>
 							<Icon name="ios-arrow-back" />
 						</Button>
-					</Left>
+					</Left> */}
 
-					<Body style={{ flex: 3 }}>
-						{/* <Title>{param ? param.name.item : "Blank Page"}</Title> */}
+					{/* <Body style={{ flex: 3 }}>
+					
 						<Title style={{marginLeft:'50%'}}>Trash </Title>
 					</Body>
 
 					<Right />
-				</Header>
+        </Header> */}
+        	<Header style={{ backgroundColor:'white'}}>
+					
+				
+          <Left>
+          {/* <Button transparent onPress={() => this.props.navigation.goBack()}> */}
+            <Icon style={{ backgroundcolor:'gray' , marginTop:'10%'}} name="ios-arrow-back" />
+          {/* </Button> */}
+        </Left>
+         <Body >
+         <TouchableOpacity  
+         onPress={ ()=>{this.props.navigation.navigate("SpeechRoute")}}>
+         <Image  source={require('../../../../assets/top.png')} style={{width: 50, height: 50 , marginLeft:'50%', marginTop: '10%' }} />
+        </ TouchableOpacity>
+         
+         </Body>
+         <Right />
+       </Header>
         <Content>
             {/* <Button style={{backgroundColor:'transparent' , height:'30%'}} */}
            

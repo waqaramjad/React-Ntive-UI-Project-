@@ -36,21 +36,10 @@ class BlankPage extends React.Component<Props, State> {
 			<Container style={styles.container}>
 				<Header style={{ backgroundColor:'white'}}>
 					
-					{/* <Left>
-						<Button transparent onPress={() => this.props.navigation.goBack()}>
-							<Icon name="ios-arrow-back" />
-						</Button>
-					</Left>
-
-					<Body style={{ flex: 3 }}>
-						<Title>{param ? param.name.item : "Blank Page"}</Title>
-						<Title>Blank Page</Title>
-					</Body>
-
-					<Right /> */}
+				
 					 <Left>
 					 {/* <Button transparent onPress={() => this.props.navigation.goBack()}> */}
-						 <Icon style={{ backgroundcolor:'gray'}} name="ios-arrow-back" />
+						 <Icon style={{ backgroundcolor:'gray' ,  marginTop:'10%'}} name="ios-arrow-back" />
 					 {/* </Button> */}
 				 </Left>
           <Body >
@@ -58,12 +47,7 @@ class BlankPage extends React.Component<Props, State> {
           onPress={ ()=>{this.props.navigation.navigate("SpeechRoute")}}>
           <Image  source={require('../../../../assets/top.png')} style={{width: 50, height: 50 , marginLeft:'50%', marginTop: '10%' }} />
          </ TouchableOpacity>
-          {/* <Icon
-                active
-                name="trash"
-                style={{  color : 'black'}}
-                onPress={() => this.props.navigation.navigate("SpeechRoute")}
-              /> */}
+          
           </Body>
           <Right />
 				</Header>
@@ -91,7 +75,7 @@ class BlankPage extends React.Component<Props, State> {
               
             </CardItem>
        <CardItem footer>
-	   <Right style={{marginLeft : '50%'}}>
+	   <Right style={{marginLeft : '70%'}}>
 	   <Image  source={require('../../../../assets/roundbutton.png')} style={{width: 30, height: 30 , marginLeft : '40%'}} />
   
 	   </Right>

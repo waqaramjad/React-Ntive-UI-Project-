@@ -53,20 +53,20 @@ export default class Sidebar extends React.Component<Props, State> {
 			<Text>Always Listning</Text>
 
 												</Body>
-
+												
 											 <Right>
-											<Switch value={true}/>
+											<Switch value={true} onTintColor='#D8CCEC' thumbTintColor='#6539B3'/>
 
 												</Right>	 
 												</ListItem>	
 							
-								<ListItem icon>
-            <Left>
+								<ListItem icon noBorder  >
+            <Left >
               {/* <Button > */}
                 <Icon active name="ios-information-circle-outline" />
               {/* </Button> */}
             </Left>
-            <Body>
+            <Body >
               <Text>About Butterfly</Text>
             </Body>
             
@@ -83,7 +83,7 @@ export default class Sidebar extends React.Component<Props, State> {
             </Body>
            
           </ListItem>
-		  <ListItem icon>
+		  <ListItem icon style={{marginTop : '100%'}}>
             <Left>
               {/* <Button > */}
                 <Icon active name="sign-out" />

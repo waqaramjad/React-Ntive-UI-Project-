@@ -56,11 +56,21 @@ class LoginForm extends React.Component<Props, State> {
 
   render() {
     const form = (
-      <Form  style={{ width:250 , marginTop: 10 , backgroundColor : 'white' }}>
+      <Form  style={{ width:250 , marginTop: 10 , backgroundColor : 'white', 
+      borderRadius:10,
+      borderWidth: 1,}}>
         <Field
           name="email"
           component={this.renderInput}
           validate={[email, required]}
+
+          style={{borderWidth: 2,
+ 
+            // Set border Hex Color Code Here.
+           
+            
+           // Set border Radius.
+            borderRadius: 20 ,}}
           
         />
         {/* <Field

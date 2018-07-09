@@ -49,8 +49,10 @@ class Home extends React.Component<Props, State> {
     console.log(this.props.navigation)
     var swipeoutBtns = [
       {
-        text: 'Delete', 
-        backgroundColor: 'red'
+        // text: 'Delete', 
+        backgroundColor: '#fd3232', 
+        component: <Icon active name="trash" style={{margin:'30%'}}/>
+     
       }
     ]
     return (
@@ -78,7 +80,14 @@ class Home extends React.Component<Props, State> {
                 onPress={() => this.props.navigation.navigate("SpeechRoute")}
               /> */}
           </Body>
-          <Right />
+          <Right >
+          <Icon
+               style={{  color:'black' , marginTop : '5%'}}
+                active name="search"
+                
+              />
+
+          </Right>
         </Header>
         <Content>
           <List>
