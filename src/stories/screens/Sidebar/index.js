@@ -72,7 +72,7 @@ export default class Sidebar extends React.Component<Props, State> {
             
           </ListItem>
 
-		  <ListItem icon>
+		  <ListItem icon button onPress={() => this.props.navigation.navigate("Trashroute" )} >
             <Left>
               {/* <Button > */}
                 <Icon active name="trash" />
