@@ -1,5 +1,7 @@
 import * as React from "react";
 import Swipeout from 'react-native-swipeout';
+import { AppRegistry, View, TouchableHighlight ,TouchableOpacity ,  Image } from 'react-native';
+
 import {
   Container,
   Header,
@@ -65,12 +67,16 @@ class Home extends React.Component<Props, State> {
             </Button>
           </Left>
           <Body >
-          <Icon
+          <TouchableOpacity  
+          onPress={ ()=>{this.props.navigation.navigate("SpeechRoute")}}>
+          <Image  source={require('../../../../assets/top.png')} style={{width: 50, height: 50 , marginLeft:'50%', marginTop: '10%' }} />
+         </ TouchableOpacity>
+          {/* <Icon
                 active
                 name="trash"
                 style={{  color : 'black'}}
                 onPress={() => this.props.navigation.navigate("SpeechRoute")}
-              />
+              /> */}
           </Body>
           <Right />
         </Header>
@@ -98,7 +104,11 @@ class Home extends React.Component<Props, State> {
           console.log('hy')
  }}>  */}
             <CardItem  button onPress={() =>   this.props.navigation.navigate("BlankPage"  ,{
-                    name:  'React Native Starter kit' 
+                   name : 'NativeBase', 
+                   secomds:  sec1 , 
+                    date :  date1, 
+                    time : time1 ,
+                    data : data1 
                   })} >
             {/* <CardItem  > */}
            
@@ -107,7 +117,7 @@ class Home extends React.Component<Props, State> {
               <Text>{time1} </Text>
             </CardItem>
         <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : 'gray'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}>
               <Body>
                 <Text>
                 {data1} 
@@ -126,7 +136,7 @@ class Home extends React.Component<Props, State> {
               <Text>{time2} </Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : 'gray'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}>
               <Body>
                 <Text>
                  {data2}
@@ -143,7 +153,7 @@ class Home extends React.Component<Props, State> {
               <Text>{time3}</Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : 'gray'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}>
               <Body>
                 <Text>
 {data3}                 
@@ -160,7 +170,7 @@ class Home extends React.Component<Props, State> {
               <Text>{time4} </Text>
             </CardItem>
             <Swipeout right={swipeoutBtns} >
-            <CardItem style={{backgroundColor : 'gray'}}>
+            <CardItem style={{backgroundColor : '#E9EBEE'}}>
               <Body>
                 <Text>
 {data4}                 

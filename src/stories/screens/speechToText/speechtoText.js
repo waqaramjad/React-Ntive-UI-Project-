@@ -1,19 +1,8 @@
 import * as React from "react";
-import {
-    Container,
-    Header,
-    Title,
-    Content,
-    Text,
-    Button,
-    Icon,
-    Left,
-    Body,
-    Right,
-    List,
-    ListItem , 
-      Card, CardItem
-  } from "native-base";
+import { AppRegistry, View, TouchableHighlight ,TouchableOpacity ,  Image } from 'react-native';
+import { Container, Content, Header, Body, Title, Button, Text, Icon, Footer } from "native-base";
+
+// import React, { Component } from 'react';
 // import styles from "./styles";
 export interface Props {
 	navigation: any;
@@ -22,31 +11,23 @@ export interface State {}
 class Speech extends React.Component<Props, State> {
     render() {
         return (
-            <Container >
-<Content>
+        <View>
+      <TouchableOpacity  
+          onPress={ ()=>{this.props.navigation.navigate("Home")}}>
+                
 
-<Card>
-            <CardItem  >
-              <Text style={{marginRight:'20%'}}>00:00:09</Text>
-              <Text  style={{marginRight:'15%' }}>Mar 8 , 2018</Text>
-              <Text>2:25 PM </Text>
-            </CardItem>
-            
-            <CardItem style={{backgroundColor : 'gray'}}>
-              <Body>
-                <Text>
-                NativeBase is made from effective building blocks referred to as components.
-                 
-                </Text>
-              </Body>
-            </CardItem>
+         
+      <Image    source={require('../../../../assets/speech.png')} style={
+ {
+ margin: '10%', 
+	width: 300,
+    height: 500,
+    // resizeMode: 'cover', // or 'stretch'
+  }			} />
        
-           
-         </Card>
+        </TouchableOpacity > 
 
-    </Content>
-
-                </Container>
+    </View>
         
         )
 
