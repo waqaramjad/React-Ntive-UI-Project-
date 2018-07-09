@@ -46,7 +46,7 @@ class LoginForm extends React.Component<Props, State> {
       this.props.navigation.navigate("Drawer");
     } else {
       Toast.show({
-        text: "Enter Valid Username & password!",
+        text: "Enter Valid email !",
         duration: 2000,
         position: "top",
         textStyle: { textAlign: "center" }

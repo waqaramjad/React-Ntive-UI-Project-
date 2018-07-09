@@ -45,7 +45,7 @@ class Trash extends React.Component<Props, State> {
 
         var swipeoutBtns = [
             
-             { text: 'Delete Permanently', 
+             { text: 'Delete ', 
               backgroundColor: 'red'},
               {
                 text : 'Restore', 
