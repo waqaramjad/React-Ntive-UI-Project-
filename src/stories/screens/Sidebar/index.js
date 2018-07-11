@@ -1,7 +1,10 @@
 import * as React from "react";
 import { Text, Container, List, ListItem, Content ,Icon,Button , View,  Switch ,Right,  Left ,  Body} from "native-base";
+<<<<<<< HEAD
 import {  Image } from 'react-native';
 
+=======
+>>>>>>> f42aa4c3d198397dd67cf667d2544344b7c06340
 import { NavigationActions } from "react-navigation";
 // import Right from "../../../theme/components/Right";
 // import { Switch } from "react-native-switch";
@@ -14,10 +17,21 @@ const routes = [
 	{
 		route: "BlankPage",
 		caption: "About Butterfly",
+<<<<<<< HEAD
+=======
 	},
 	{
 		route: "Login",
 		caption: "Trash",
+>>>>>>> f42aa4c3d198397dd67cf667d2544344b7c06340
+	},
+	{
+		route: "Login",
+		caption: "Trash",
+	},
+	{
+		route: "SpeechRoute",
+		caption: "Logout",
 	},
 	{
 		route: "SpeechRoute",
