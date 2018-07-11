@@ -7,6 +7,7 @@
       "icon": "./assets/loading.png"
     },
   
+    "orientation": "portrait",
     "primaryColor": "#cccccc",
     "packagerOpts": {
       "assetExts": ["ttf"]
