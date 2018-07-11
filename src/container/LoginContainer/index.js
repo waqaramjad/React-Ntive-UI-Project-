@@ -42,7 +42,7 @@ class LoginForm extends React.Component<Props, State> {
   }
 
   login() {
-    // if (this.props.valid) {
+    if (this.props.valid) {
       this.props.navigation.navigate("Drawer");
     } else {
       Toast.show({
