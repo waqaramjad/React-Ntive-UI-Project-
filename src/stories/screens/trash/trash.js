@@ -59,10 +59,11 @@ class Trash extends React.Component<Props, State> {
  
         	<Header style={{ backgroundColor:'white'}}>
 					
-				
-          <Left>
-            <Icon style={{ backgroundcolor:'gray' , marginTop:'10%'}} name="ios-arrow-back" />
-        </Left>
+          
+        <Button iconLeft light style={{marginTop:'2%'}}  onPress={() => this.props.navigation.goBack()}>
+            <Icon  name='ios-arrow-back' />
+           
+          </Button>
          <Body >
          <TouchableOpacity  
          onPress={ ()=>{this.props.navigation.navigate("SpeechRoute")}}>
@@ -82,7 +83,7 @@ class Trash extends React.Component<Props, State> {
               <Text style={{marginRight:'20%'}}>{sec1}</Text>
               <Text  style={{marginRight:'15%' }}>{date1}</Text>
               <Text>{time1} </Text>
-              <Icon active name="dots-horizontal" />
+              <Icon active name="md-arrow-dropright" />
               
             </CardItem>
         <Swipeout right={swipeoutBtns} >
