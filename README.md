@@ -1,3 +1,6 @@
+#butterflytest2
+
+
 ## reading instruction for this file 
 a)  main heading donated by  ##
 b) sub heading donated by #
@@ -14,15 +17,6 @@ d) must read in the following sequence bellow is the sequence of section name an
 	vi) ## Facing any problem in installtion
 	   -#possible problem
 		 -# how you resolve or update me about errors 
-
-
-
-		 
-
-
-
- 
-
 
 
 
@@ -74,14 +68,14 @@ and below QR code you will see following things
 		press q to display QR code 
 
 
-# Run on Android emulator
+### Run on Android emulator
 
 5) open your android emulator when your android emulator start completly  than open expo app in the emulator and type the URL than is shown in your terminal 
 
 if you feeling a problem in typing URL you may also press "a" in terminal and your project will automtically start in your android emulator 
 
 
-# Run on IOS semulator 
+### Run on IOS semulator 
 
 6) close your android emulator 
 7) close or stop your terminal 
@@ -109,7 +103,7 @@ e) enjoy your project
 
 ## Facing any problem in installtion
 
-#possible problem
+###possible problem
 
 a) npm cache problem 
 b) slow internet problem
@@ -117,7 +111,7 @@ c) error in installation
 d) your computor and expo may not on the same internet 
 
 
-# how you resolve or update me about errors 
+### how you resolve or update me about errors 
 
  take screen shots of the following things and send to me 
 
